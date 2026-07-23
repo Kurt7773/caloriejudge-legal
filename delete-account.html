@@ -68,9 +68,8 @@
     }
     nav.topbar .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--deep); font-size: 15px; }
     nav.topbar .logo .mark {
-      width: 28px; height: 28px; border-radius: 8px;
-      background: linear-gradient(135deg, var(--primary), var(--brown));
-      display: grid; place-items: center; color: #fff; font-size: 15px;
+      width: 30px; height: 30px; border-radius: 8px;
+      object-fit: cover; background: #fff; border: 1px solid var(--line);
     }
     nav.topbar .links a { color: var(--muted); font-weight: 600; font-size: 13.5px; margin-left: 16px; }
     nav.topbar .links a:hover { color: var(--deep); text-decoration: none; }
@@ -89,7 +88,7 @@
 </head>
 <body>
   <nav class="topbar">
-    <div class="logo"><span class="mark">⚖️</span> My Calorie Judge</div>
+    <div class="logo"><img src="logo.png" class="mark" alt="My Calorie Judge logo"> My Calorie Judge</div>
     <div class="links">
       <a href="landing.html">Home</a>
       <a href="index.html">Privacy</a>
