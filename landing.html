@@ -38,9 +38,8 @@
     }
     nav.topbar .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--deep); font-size: 16px; }
     nav.topbar .logo .mark {
-      width: 30px; height: 30px; border-radius: 9px;
-      background: linear-gradient(135deg, var(--primary), var(--brown));
-      display: grid; place-items: center; color: #fff; font-size: 16px; font-weight: 900;
+      width: 32px; height: 32px; border-radius: 9px;
+      object-fit: cover; background: #fff; border: 1px solid var(--line);
     }
     nav.topbar .links a { color: var(--muted); font-weight: 600; font-size: 14px; margin-left: 20px; }
     nav.topbar .links a:hover { color: var(--deep); text-decoration: none; }
@@ -56,6 +55,11 @@
       display: inline-block; font-size: 12px; letter-spacing: .16em; text-transform: uppercase;
       font-weight: 800; opacity: .92; background: rgba(255,255,255,.15);
       padding: 6px 14px; border-radius: 99px; margin-bottom: 18px;
+    }
+    header.hero .hero-logo {
+      width: 92px; height: 92px; border-radius: 22px; object-fit: cover;
+      background: #fff; padding: 4px; margin: 0 0 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
     }
     header.hero h1 { margin: 0 0 14px; font-size: 40px; font-weight: 900; line-height: 1.1; }
     header.hero p.tag { margin: 0 auto 30px; font-size: 18px; max-width: 560px; opacity: .95; }
@@ -119,7 +123,7 @@
 </head>
 <body>
   <nav class="topbar">
-    <div class="logo"><span class="mark">⚖️</span> My Calorie Judge</div>
+    <div class="logo"><img src="logo.png" class="mark" alt="My Calorie Judge logo"> My Calorie Judge</div>
     <div class="links">
       <a href="landing.html">Home</a>
       <a href="index.html">Privacy</a>
@@ -128,6 +132,7 @@
   </nav>
 
   <header class="hero">
+    <img src="logo.png" class="hero-logo" alt="My Calorie Judge logo">
     <span class="badge">By KruxLabs</span>
     <h1>The AI calorie tracker<br>that judges your meals</h1>
     <p class="tag">Snap a photo of your food. The Judge estimates the calories and macros —
