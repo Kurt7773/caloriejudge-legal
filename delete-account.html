@@ -62,6 +62,18 @@
     li { margin-bottom: 6px; }
     a { color: var(--primary); font-weight: 600; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    nav.topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 760px; margin: 0 auto; padding: 16px 20px;
+    }
+    nav.topbar .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--deep); font-size: 15px; }
+    nav.topbar .logo .mark {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--brown));
+      display: grid; place-items: center; color: #fff; font-size: 15px;
+    }
+    nav.topbar .links a { color: var(--muted); font-weight: 600; font-size: 13.5px; margin-left: 16px; }
+    nav.topbar .links a:hover { color: var(--deep); text-decoration: none; }
     .steps { background: #FBF6EF; border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px 6px; }
     footer {
       text-align: center;
@@ -76,6 +88,14 @@
   </style>
 </head>
 <body>
+  <nav class="topbar">
+    <div class="logo"><span class="mark">⚖️</span> My Calorie Judge</div>
+    <div class="links">
+      <a href="landing.html">Home</a>
+      <a href="index.html">Privacy</a>
+      <a href="delete-account.html">Delete account</a>
+    </div>
+  </nav>
   <header>
     <p class="brand">My Calorie Judge · KruxLabs</p>
     <h1>Delete Your Account</h1>
